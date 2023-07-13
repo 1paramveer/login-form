@@ -4,9 +4,9 @@ const passwordError = document.getElementById("passwordError");
 
 const passwordMatch = () => {
   if (password.value === confirmPassword.value) {
-    passwordError.innerText = "";
+    passwordError.style.color = "white";
   } else if (password.value !== confirmPassword.value) {
-    passwordError.innerText = "*Password do not match";
+    passwordError.style.color = "red";
   }
 };
 
