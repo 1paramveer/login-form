@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Skranji&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Andika&display=swap");
 :root {
-  font-family: "Skranji", cursive;
+  font-family: "Andika", sans-serif;
 }
 p {
   margin: 0;
   padding: 0;
+  font-weight: bold;
 }
 body {
   margin: 0;
@@ -19,13 +20,45 @@ body {
   background-size: cover;
 }
 
-#main {
+#content {
+  .contentHead {
+    width: 60%;
+    margin: 15px;
+  }
+  display: grid;
+  place-content: center;
   background-color: rgba(0, 0, 0, 0.075);
 
   form {
     background-color: white;
+    input[type="password"] {
+      margin-bottom: 30px;
+    }
+    .formHeading {
+      padding: 20px 30px 20px 12px;
+      font-size: 20px;
+    }
+    label {
+      font-weight: bold;
+      font-size: 12px;
+    }
     fieldset {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 100px;
       border: none;
+    }
+    .submitDiv {
+      background-color: rgba(0, 0, 0, 0.075);
+      button[type="submit"] {
+        margin-top: 30px;
+        margin-left: 30px;
+        padding: 10px;
+      }
+      p {
+        margin-top: 10px;
+        margin-left: 30px;
+      }
     }
   }
 }
